@@ -1,0 +1,519 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://fonts/bit5x3.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scenes/paddle.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/ball.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scripts/game.gd" type="Script" id=4]
+[ext_resource path="res://fonts/bit5x5.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 256, 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 64
+font_data = ExtResource( 5 )
+
+[node name="Game" type="Node2D"]
+script = ExtResource( 4 )
+max_score = 10
+
+[node name="Background" type="ColorRect" parent="."]
+margin_right = 512.0
+margin_bottom = 256.0
+color = Color( 0.729412, 0.541176, 0.341176, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dots" type="Node2D" parent="."]
+
+[node name="Dot" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 6.00305
+margin_right = 258.0
+margin_bottom = 10.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot2" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 14.0031
+margin_right = 258.0
+margin_bottom = 18.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot3" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 22.0031
+margin_right = 258.0
+margin_bottom = 26.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot4" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 30.0031
+margin_right = 258.0
+margin_bottom = 34.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot5" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 38.0031
+margin_right = 258.0
+margin_bottom = 42.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot6" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 46.0031
+margin_right = 258.0
+margin_bottom = 50.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot7" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 54.0031
+margin_right = 258.0
+margin_bottom = 58.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot8" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 6.00305
+margin_right = 258.0
+margin_bottom = 10.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot9" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 14.0031
+margin_right = 258.0
+margin_bottom = 18.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot10" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 22.0031
+margin_right = 258.0
+margin_bottom = 26.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot11" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 30.0031
+margin_right = 258.0
+margin_bottom = 34.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot12" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 38.0031
+margin_right = 258.0
+margin_bottom = 42.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot13" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 46.0031
+margin_right = 258.0
+margin_bottom = 50.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot14" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 54.0031
+margin_right = 258.0
+margin_bottom = 58.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot15" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 62.0031
+margin_right = 258.0
+margin_bottom = 66.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot16" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 70.0031
+margin_right = 258.0
+margin_bottom = 74.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot17" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 78.0031
+margin_right = 258.0
+margin_bottom = 82.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot18" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 86.0031
+margin_right = 258.0
+margin_bottom = 90.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot19" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 94.0031
+margin_right = 258.0
+margin_bottom = 98.0031
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot20" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 102.003
+margin_right = 258.0
+margin_bottom = 106.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot21" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 110.003
+margin_right = 258.0
+margin_bottom = 114.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot22" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 118.003
+margin_right = 258.0
+margin_bottom = 122.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot23" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 126.003
+margin_right = 258.0
+margin_bottom = 130.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot24" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 134.003
+margin_right = 258.0
+margin_bottom = 138.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot25" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 142.003
+margin_right = 258.0
+margin_bottom = 146.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot26" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 150.003
+margin_right = 258.0
+margin_bottom = 154.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot27" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 158.003
+margin_right = 258.0
+margin_bottom = 162.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot28" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 166.003
+margin_right = 258.0
+margin_bottom = 170.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot29" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 174.003
+margin_right = 258.0
+margin_bottom = 178.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot30" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 182.003
+margin_right = 258.0
+margin_bottom = 186.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot31" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 190.003
+margin_right = 258.0
+margin_bottom = 194.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot32" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 198.003
+margin_right = 258.0
+margin_bottom = 202.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot33" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 206.003
+margin_right = 258.0
+margin_bottom = 210.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot34" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 214.003
+margin_right = 258.0
+margin_bottom = 218.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot35" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 222.003
+margin_right = 258.0
+margin_bottom = 226.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot36" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 230.003
+margin_right = 258.0
+margin_bottom = 234.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot37" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 238.003
+margin_right = 258.0
+margin_bottom = 242.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot38" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 246.003
+margin_right = 258.0
+margin_bottom = 250.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dot39" type="ColorRect" parent="Dots"]
+margin_left = 254.0
+margin_top = 246.003
+margin_right = 258.0
+margin_bottom = 250.003
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BorderTop" type="Area2D" parent="." groups=[
+"wall",
+]]
+
+[node name="ColorRect" type="ColorRect" parent="BorderTop"]
+margin_right = 512.0
+margin_bottom = 4.0
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BorderTop"]
+position = Vector2( 256, 2 )
+shape = SubResource( 1 )
+
+[node name="BorderBottom" type="Area2D" parent="." groups=[
+"wall",
+]]
+position = Vector2( 0, 252 )
+
+[node name="ColorRect" type="ColorRect" parent="BorderBottom"]
+margin_right = 512.0
+margin_bottom = 4.0
+color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BorderBottom"]
+position = Vector2( 256, 2 )
+shape = SubResource( 1 )
+
+[node name="ScoreP1" type="Label" parent="."]
+margin_left = 200.0
+margin_top = 8.0
+margin_right = 225.0
+margin_bottom = 47.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreP2" type="Label" parent="."]
+margin_left = 293.0
+margin_top = 8.0
+margin_right = 318.0
+margin_bottom = 47.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WinnerLabel" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 106.0
+margin_top = 100.0
+margin_right = 410.0
+margin_bottom = 148.0
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0.580392, 0.188235, 0.0352941, 1 )
+text = "P1 Wins"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Paddle1" parent="." groups=[
+"paddle",
+] instance=ExtResource( 2 )]
+position = Vector2( 24, 128 )
+input_up = "p1_up"
+input_down = "p1_down"
+
+[node name="Paddle2" parent="." groups=[
+"paddle",
+] instance=ExtResource( 2 )]
+position = Vector2( 488, 128 )
+input_up = "p2_up"
+input_down = "p2_down"
+
+[node name="Ball" parent="." instance=ExtResource( 3 )]
+speed = 300
